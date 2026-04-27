@@ -12,15 +12,19 @@
 
 <body>
 
-    <header class="relative ">
+    <header class="relative">
 
         <!-- background -->
         <div class="absolute top-0 left-0 right-0 z-0">
-            <img src="assets/image/linearbg.svg" alt="" class="w-full object-cover">
+            <img src="assets/image/linearbg.svg" alt="" class="w-full h-full object-cover">
         </div>
 
-        <div class="container relative">
-            <nav class="flex items-center justify-between px-2 md:px-4 py-4  top-0 w-full z-50">
+        <!-- NAVBAR -->
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-[999]">
+
+            <!-- ONLY THIS PART GETS BLUR -->
+            <div id="nav-inner"
+                class="container flex items-center justify-between px-2 md:px-4 py-4 transition-all duration-300 ">
 
                 <!-- Logo -->
                 <div class="flex items-center gap-2 cursor-pointer">
@@ -43,10 +47,11 @@
 
                 <!-- CTA -->
                 <div class="hidden md:flex">
-                    <a href="#" class="flex items-center gap-2 px-6 py-2 text-white bg-gray-900 rounded-full">
-                        Let's Collaborate
-                        <span class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <a href="#"
+                        class="cta flex items-center justify-between gap-10 px-6 py-2 text-white bg-gray-900 rounded-full">
+                        <span class="cta-text flex-1 text-left">Let's Collaborate</span>
+                        <span class="cta-arrow w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                                 <path d="M0.75 10.75L10.75 0.75M10.75 0.75H3.25M10.75 0.75V8.25" stroke="#1B1D1E"
                                     stroke-width="1.5" stroke-linecap="round" />
                             </svg>
@@ -56,7 +61,7 @@
 
                 <!-- Hamburger -->
                 <div
-                    class="lg:hidden cursor-pointer menu-toggle relative w-8 h-8 flex items-center justify-center z-9999">
+                    class="lg:hidden cursor-pointer menu-toggle relative w-8 h-8 flex items-center justify-center z-[999]">
 
                     <svg class="hamburger w-6 h-6 absolute" viewBox="0 0 24 24" fill="none" stroke="black"
                         stroke-width="2" stroke-linecap="round">
@@ -67,15 +72,15 @@
 
                 </div>
 
-            </nav>
-        </div>
+            </div>
+        </nav>
 
         <!-- ================= MOBILE MENU OVERLAY ================= -->
         <div
-            class="mobile-menu fixed instrument-font inset-0 bg-white flex flex-col items-center justify-center gap-8 text-4xl font-bold opacity-0 pointer-events-none z-[999] overflow-hidden">
+            class="mobile-menu fixed instrument-font inset-0 bg-white flex flex-col items-center justify-center gap-8 text-4xl font-bold opacity-0 pointer-events-none z-[50] overflow-hidden">
 
             <!-- SVG background -->
-            <div class="menu-bg-svg absolute top-0 right-0 opacity-0">
+            <div class="menu-bg-svg absolute top-0 right-0 opacity-0 ">
                 <img src="assets/image/linearbg.svg" class="w-full h-auto object-cover" alt="">
             </div>
 
@@ -94,10 +99,11 @@
 
 
     <!-- hero -->
-    <section class="relative flex  items-center justify-center px-2 md:px-4 py-20 text-center z-20">
+    <section class="relative flex  items-center justify-center px-2 md:px-4 pt-40 text-center z-20">
         <div class="container">
 
-            <h1 class="text-5xl md:text-7xl lg:text-[128px] font-medium text-black lg:leading-[120%] lg:tracking-[-1.28px]">
+            <h1
+                class="text-5xl md:text-7xl lg:text-[128px] font-medium text-black lg:leading-[120%] lg:tracking-[-1.28px]">
                 Building bold brands with
                 <span class="instrument-font font-normal">thoughtful design</span>
             </h1>

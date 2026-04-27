@@ -121,3 +121,14 @@ html.lenis body {
 }
 
 /* Lenis end */
+
+
+/* sticky navbar */
+#nav-inner {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 9999px;
+}
+
+
