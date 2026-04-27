@@ -192,3 +192,29 @@ buttons.forEach((btn) => {
     });
   });
 });
+
+
+// logo sliders
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#logo-slider', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    perPage: 5,
+    gap    : '2rem',
+    arrows : false,
+    pagination: false,
+    autoScroll: {
+      speed: 1, // Adjust for faster/slower scroll
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    },
+    breakpoints: {
+      1024: { perPage: 4 },
+      768: { perPage: 3 },
+      480: { perPage: 2 },
+    }
+  });
+
+  splide.mount( window.splide.Extensions );
+});
