@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-offwhite: #F6F6F6;
+  --color-black: #1B1D1E;
+  --color-blue: #4928FD;
+
+  --font-inter: "Inter", sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.instrument-font {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1372px;
+  width: 100%;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+
+
+
+@layer base {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+/* =========================
+   CSS RESET / BASE
+========================= */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin & padding */
+
+/* HTML & body */
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+
+}
+
+
+
+/* Remove link underline */
+a {
+  text-decoration: none;
+}
+
+/* Images responsive */
+img,
+picture,
+video,
+canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* Form elements inherit font */
+
+
+/* Button cursor */
+button {
+  cursor: pointer;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* smooth scrooll */
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Lenis end */

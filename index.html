@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awake agency</title>
+    <link rel="icon" type="image/x-icon" href="/assets/image/logo.png">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="relative ">
+
+        <!-- background -->
+        <div class="absolute top-0 left-0 right-0 z-0">
+            <img src="assets/image/linearbg.svg" alt="" class="w-full object-cover">
+        </div>
+
+        <div class="container relative">
+            <nav class="flex items-center justify-between px-2 md:px-4 py-4  top-0 w-full z-50">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center">
+                        <img src="assets/image/logo.png" alt="">
+                    </div>
+                    <span class="text-2xl font-bold tracking-[-0.24px] text-black">Awake</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center p-1.5 rounded-full border bg-gray-200 border-gray-200/50">
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium bg-white text-black rounded-full">Home</a>
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium text-black/60 hover:text-black">About Us</a>
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium text-black/60 hover:text-black">Services</a>
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium text-black/60 hover:text-black">Work</a>
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium text-black/60 hover:text-black">Team Us</a>
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium text-black/60 hover:text-black">Pricing</a>
+                    <a href="#" class="px-5 py-2 text-[16px] font-medium text-black/60 hover:text-black">Awards</a>
+                </div>
+
+                <!-- CTA -->
+                <div class="hidden md:flex">
+                    <a href="#" class="flex items-center gap-2 px-6 py-2 text-white bg-gray-900 rounded-full">
+                        Let's Collaborate
+                        <span class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M0.75 10.75L10.75 0.75M10.75 0.75H3.25M10.75 0.75V8.25" stroke="#1B1D1E"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Hamburger -->
+                <div
+                    class="lg:hidden cursor-pointer menu-toggle relative w-8 h-8 flex items-center justify-center z-9999">
+
+                    <svg class="hamburger w-6 h-6 absolute" viewBox="0 0 24 24" fill="none" stroke="black"
+                        stroke-width="2" stroke-linecap="round">
+                        <line class="line1" x1="3" y1="6" x2="21" y2="6"></line>
+                        <line class="line2" x1="3" y1="12" x2="21" y2="12"></line>
+                        <line class="line3" x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+
+                </div>
+
+            </nav>
+        </div>
+
+        <!-- ================= MOBILE MENU OVERLAY ================= -->
+        <div
+            class="mobile-menu fixed instrument-font inset-0 bg-white flex flex-col items-center justify-center gap-8 text-4xl font-bold opacity-0 pointer-events-none z-[999] overflow-hidden">
+
+            <!-- SVG background -->
+            <div class="menu-bg-svg absolute top-0 right-0 opacity-0">
+                <img src="assets/image/linearbg.svg" class="w-full h-auto object-cover" alt="">
+            </div>
+
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Work</a>
+            <a href="#">Team</a>
+            <a href="#">Pricing</a>
+            <a href="#">Awards</a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- hero -->
+    <section class="relative flex  items-center justify-center px-2 md:px-4 py-20 text-center z-20">
+        <div class="container">
+
+            <h1 class="text-5xl md:text-7xl lg:text-[128px] font-medium text-black lg:leading-[120%] lg:tracking-[-1.28px]">
+                Building bold brands with
+                <span class="instrument-font font-normal">thoughtful design</span>
+            </h1>
+
+            <p class="text-[16px] font-normal leading-[140%] text-black/60 tracking-[0.064px] max-w-2xl mx-auto mt-4">
+                At Awake, we help small startups tackle the world's biggest challenges with tailored solutions,
+                guiding you from strategy to success in a competitive market.
+            </p>
+
+            <div class="flex flex-col items-center justify-center gap-8 md:flex-row mt-8">
+
+                <a href="#"
+                    class="cta relative flex items-center justify-between gap-10 px-5 py-3 rounded-full bg-blue text-[16px] tracking-[0.064px] leading-[140%] text-white overflow-hidden w-fit">
+
+                    <span class="cta-text flex-1 text-left">
+                        Get Started
+                    </span>
+
+                    <span class="cta-arrow flex items-center justify-center w-8 h-8 bg-white rounded-full shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M0.75 10.75L10.75 0.75M10.75 0.75H3.25M10.75 0.75V8.25" stroke="#1B1D1E"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                </a>
+
+                <div class="flex items-center gap-4">
+                    <div class="flex -space-x-3">
+                        <img class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                            src="assets/image/person1hero.avif" alt="User 1">
+                        <img class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                            src="assets/image/person2hero.avif" alt="User 2">
+                        <img class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                            src="assets/image/person3hero.avif" alt="User 3">
+                        <img class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                            src="assets/image/person4hero.avif" alt="User 4">
+                    </div>
+
+                    <div class="flex flex-col items-start">
+                        <div class="flex text-orange-400">
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="h-5 w-5 fill-current text-orange-200" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <span class="text-sm font-normal leading-[140%] text-black/60 tracking-[0.056px] ">Trusted by
+                            1000+ clients</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/splide-extension-auto-scroll.min.js">
+    </script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
