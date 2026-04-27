@@ -110,7 +110,7 @@ if (!menuToggle || !mobileMenu || !line1 || !line2 || !line3 || !menuBgSvg || !n
     // Sticky Navbar (optimized)
     // =====================
     function handleScroll() {
-        if (window.scrollY > 40 && !scrolled) {
+        if (window.scrollY > 30 && !scrolled) {
             scrolled = true;
 
             gsap.to(navInner, {
@@ -121,7 +121,7 @@ if (!menuToggle || !mobileMenu || !line1 || !line2 || !line3 || !menuBgSvg || !n
                 ease: "power2.out"
             });
 
-        } else if (window.scrollY <= 40 && scrolled) {
+        } else if (window.scrollY <= 30 && scrolled) {
             scrolled = false;
 
             gsap.to(navInner, {
