@@ -162,6 +162,25 @@ if (typeof Lenis !== 'undefined') {
   gsap.ticker.lagSmoothing(0);
 }
 
+// Hero heading text animate
+ const split = new SplitText(".hero-title", {
+    type: "chars,words"
+  });
+
+  gsap.set(split.chars, {
+    opacity: 0,
+    x: 60,
+    filter: "blur(10px)"
+  });
+
+  gsap.to(split.chars, {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    duration: 1,
+    ease: "power4.out",
+    stagger: 0.03
+  });
 
 // Button Animation
 
@@ -217,4 +236,70 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   splide.mount( window.splide.Extensions );
+});
+
+
+// Text scrub animation
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof ScrollTrigger !== "undefined") {
+        const scrubTextElements = document.querySelectorAll('.scrub-text');
+
+        scrubTextElements.forEach(el => {
+            const words = el.innerText.split(' ');
+            el.innerHTML = '';
+
+            words.forEach(word => {
+                const span = document.createElement('span');
+                span.innerText = word + ' ';
+                span.style.color = '#E5E7EB';
+                el.appendChild(span);
+            });
+
+            gsap.to(el.querySelectorAll('span'), {
+                color: '#111827',
+                stagger: 0.1,
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 70%",
+                    end: "bottom 50%",
+                    scrub: 1,
+                }
+            });
+        });
+    }
+});
+
+
+// badge
+document.addEventListener("DOMContentLoaded", function () {
+    const badges = document.querySelectorAll('.badge');
+
+    // Badge 1
+    gsap.to(badges[0], {
+        y: 8,
+        duration: 1.0,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1
+    });
+
+    // Badge 2
+    gsap.to(badges[1], {
+        y: 10,
+        duration: 1.4,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+        delay: 0.3
+    });
+
+    // Badge 3
+    gsap.to(badges[2], {
+        y: 6,
+        duration: 0.9,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+        delay: 0.6
+    });
 });
